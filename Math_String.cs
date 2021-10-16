@@ -20,3 +20,22 @@ string firstName = "John ";
 string lastName = "Doe";
 string name = firstName + lastName;
 Console.WriteLine(name);
+
+//String Interpolation
+string firstName = "John";
+string lastName = "Doe";
+string name = $"My full name is: {firstName} {lastName}";
+Console.WriteLine(name);
+
+//Access Strings
+string myString = "Hello";
+Console.WriteLine(myString[0]);  // Outputs "H"
+
+string myString = "Hello";
+Console.WriteLine(myString.IndexOf("e"));  // Outputs "1"
+
+//Adding Number
+string x = "10";
+string y = "20";
+string z = x + y;  // z will be 1020 (a string)
+

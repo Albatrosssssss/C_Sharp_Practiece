@@ -1,13 +1,21 @@
+//syntax
 class Person
 {
   private string name; // field
 
+  
   public string Name   // property
   {
     get { return name; }   // get method
     set { name = value; }  // set method
   }
 }
+//or
+//Shorthand Properties
+  public string Name  // property
+    { get; set; }
+
+
 
 
 //how to update value 

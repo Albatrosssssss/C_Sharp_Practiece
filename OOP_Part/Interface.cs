@@ -3,27 +3,35 @@ which can only contain abstract methods and properties (with empty bodie */
 //Note: Interfaces can contain properties and methods, but not fields
 //"I" at the beginning of an interface is good practiece 
 
-// Interface
-interface IAnimal 
+interface IFirstInterface 
 {
-  void animalSound(); // interface method (does not have a body)
+  void myMethod(); // interface method
 }
 
-// Pig "implements" the IAnimal interface
-class Pig : IAnimal 
+interface ISecondInterface 
 {
-  public void animalSound() 
+  void myOtherMethod(); // interface method
+}
+
+// Implement multiple interfaces
+class DemoClass : IFirstInterface, ISecondInterface 
+{
+  public void myMethod() 
   {
-    // The body of animalSound() is provided here
-    Console.WriteLine("The pig says: wee wee");
+    Console.WriteLine("Some text..");
+  }
+  public void myOtherMethod() 
+  {
+    Console.WriteLine("Some other text...");
   }
 }
 
 class Program 
 {
-  static void Main(string[] args) 
+  static void Main(string[] args)
   {
-    Pig myPig = new Pig();  // Create a Pig object
-    myPig.animalSound();
+    DemoClass myObj = new DemoClass();
+    myObj.myMethod();
+    myObj.myOtherMethod();
   }
 }

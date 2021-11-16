@@ -120,7 +120,7 @@ namespace Indexer_example1
 - It is used on group of elements
 - It can be overloaded
 - ref and out parameter modifiers are not permitted in indexer. 
-- 
+ 
 
 **Example 1:**
 

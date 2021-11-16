@@ -1,7 +1,7 @@
 **What are Indexers ?**
 
-Indexers in C# are known as smart arrays. 
-A C# indexer is a class property which allows us to access a member variable of a class or struct using the features of an array. In C#, indexers are created using this keyword. 
+Indexers in C# are called as smart arrays. 
+A C# indexer could be a class property which allows us to access a member variable of a class or struct using the features of an array. In C#, indexers are created using this keyword. 
 Indexers in C# are applicable on both classes and structs. 
 
 **Why we use indexers ?**
